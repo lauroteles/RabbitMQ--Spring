@@ -13,6 +13,12 @@ public class OrderItem {
     @Field(targetType = FieldType.DECIMAL128)
     private BigDecimal price;
 
+    public OrderItem(String product, Integer quantity, BigDecimal price) {
+        this.product = product;
+        this.quantity = quantity;
+        this.price = price;
+    }
+
     public OrderItem() {
 
     }
